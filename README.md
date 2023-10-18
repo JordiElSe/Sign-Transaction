@@ -1,8 +1,6 @@
 ## Sign-Transaction
 
-This project is an example of using a client and server to facilitate transfers between different addresses. Since there is just a single server on the back-end handling transfers, this is clearly very centralized. We won't worry about distributed consensus for this project.
-
-The project incorporates Public Key Cryptography by using Elliptic Curve Digital Signatures such that the server only allows transfers that have been signed for by the person who owns the associated address.
+This project is an example of using a client and server to facilitate transfers between different addresses. The project incorporates Public Key Cryptography by using Elliptic Curve Digital Signatures such that the server only allows transfers that have been signed by the owner of the associated address.
 
 ### Client
 
@@ -30,4 +28,4 @@ Inside the `/server` folder run `node generate` to generate a key pair and the a
 
 With your address you can view the balance in your wallet. If you want to make a transaction you will have to sign it using your private key. The transaction will only go through if the owner of the wallet is signing the transaction.
 
-There are already 3 sample key pairs and addresses generated with some funds in it. They are specified in the `generate.js` file inside the `/server` folder. You can use these addressess to fund your wallet.
+There are already 3 sample key pairs and addresses generated with some funds in it. They are specified as a comment in the `generate.js` file inside the `/server` folder. You can use these addressess to fund your wallet.
