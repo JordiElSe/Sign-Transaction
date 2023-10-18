@@ -26,8 +26,8 @@ The application should connect to the default server port (3042) automatically!
 Use [nodemon](https://www.npmjs.com/package/nodemon) instead of `node` to automatically restart the server on any changes.
 
 ### Usage
-Inside the server folder run `node generate` to generate a key pair and the associated address.
+Inside the `/server` folder run `node generate` to generate a key pair and the associated address.
 
 With your address you can view the balance in your wallet. If you want to make a transaction you will have to sign it using your private key. The transaction will only go through if the owner of the wallet is signing the transaction.
 
-There are already 3 sample key pairs and addresses generated with some funds in it. They are specified in the `generate.js` file inside the `server` folder. You can use these addressess to fund your wallet.
+There are already 3 sample key pairs and addresses generated with some funds in it. They are specified in the `generate.js` file inside the `/server` folder. You can use these addressess to fund your wallet.
